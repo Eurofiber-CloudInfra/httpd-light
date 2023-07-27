@@ -1,10 +1,12 @@
-# Really Small Static Webserver
+# HTTPD Light Webserver
 
+Really Small Static Webserver with minimum overhead for use in Kubernetes environments.
 Using busybox and standard httpd and making a custom build that only holds the static binary (170KB).
 
 ## Run the image
 
 ```bash
+docker build -t my-static-website .
 docker run -it --rm -p 3000:3000 my-static-website
 ```
 
